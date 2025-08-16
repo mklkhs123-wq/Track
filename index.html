@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Loan EMI Calculator</h2>
+
+  <label>Product Price: <input type="number" id="productPrice"></label><br>
+  <label>Margin Money: <input type="number" id="marginMoney"></label><br>
+  <label>Interest Rate (%): <input type="number" id="interestRate"></label><br>
+  <label>Loan Tenure (Years): <input type="number" id="loanYears"></label><br>
+
+  <h3>Other Charges</h3>
+  <label>Processing Fee: <input type="number" id="processingFee"></label><br>
+  <label>Stamp Charges: <input type="number" id="stampCharges"></label><br>
+  <label>Extra Charges: <input type="number" id="extraCharges"></label><br>
+  <label>Owner Charges: <input type="number" id="ownerCharges"></label><br><br>
+
+  <button onclick="calculateLoanEMI()">Calculate EMI</button>
+
+  <div id="emiResult"></div>
+  <div id="breakdownTable"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
